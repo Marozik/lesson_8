@@ -1,0 +1,452 @@
+/* &display=swap */
+@import "null_style.css";
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Taviraj:regular,500,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,italic,700,900&display=swap);
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   max-width: 1020px;
+   margin: 0 auto;
+}
+
+body {
+   background: url(../img/lesson/vintage-ornamental-flowers-background_52683-28040.webp);
+   font-family: "Roboto", sans-serif;
+   font-size: 20px;
+   line-height: 1.6;
+}
+.header {
+   margin-bottom: 30px;
+}
+.menu-list li:not(:last-child) {
+   margin: 0 0 10px 0;
+}
+.list-item a::before{
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background: url(../img/lesson/caret.png) 0 -5px/15px no-repeat;
+}
+.list-img {
+   display: block;
+   width: 90px;
+   height: 70px;
+   border-radius: 10px;
+   border: 1px solid #F75E05;
+}
+.list-link {
+   display: block;
+   max-width: 90px;
+   color: #666;
+}
+.list-link:hover {
+   color: black;
+}
+.close-button {
+   font-size: 18px;
+   display: block;
+   color: #666;
+   margin-bottom: 10px;
+}
+.close-button:hover {
+   color: black;
+   text-decoration: underline;
+}
+.close-button:focus {
+   text-shadow: 2px 2px 13px #000000;
+}
+.menu {
+   display: inline-block;
+   text-transform: uppercase;
+   font-size: 25px;
+   font-weight: 700;
+   color: #F75E05;
+}
+.menu::before{
+   content: "";
+   display: block;
+   height: 3px;
+   width: 100%;
+   background: #F75E05;
+   margin-top: 20px;
+}
+.menu::after{
+   content: "";
+   display: block;
+   height: 3px;
+   width: 100%;
+   background: #F75E05;
+   margin-top: -3px;
+}
+.menu:hover::before {
+   content: "";
+   display: block;
+   height: 3px;
+   width: 100%;
+   background: #9e3c03;
+   margin-top: 20px;
+}
+.menu:hover::after {
+   content: "";
+   display: block;
+   height: 3px;
+   width: 100%;
+   background: #9e3c03;
+   margin-top: -3px;
+}
+.menu:hover {
+   color: #9e3c03;
+}
+.menu-burger {
+   display: none;
+}
+.menu-burger:target {
+   display: block;
+}
+
+/*=== Block ===*/
+main {
+   margin-bottom: 30px;
+}
+.block {
+   padding: 20px;
+   border: 2px dashed #1E212C;
+   border-radius: 20px;
+   background: rgba(255,243,195,0.5);
+}
+main .block:not(:last-child) {
+   margin-bottom: 30px;
+}
+.main-title {
+   font-size: 40px;
+   font-weight: 900;
+   letter-spacing: 3px;
+   color: #F75E05;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.conteiner p:last-child {
+   margin: 0;
+}
+h2.block-title {
+   margin-bottom: 20px;
+}
+.block-title {
+   font-size: 30px;
+   font-weight: 700;
+   text-align: center;
+}
+.first-letter::first-letter {
+   color: red;
+   font-size: 40px;
+   font-weight: 700;
+   font-style: italic;
+}
+p{
+   color: #666;
+   line-height: 1.4;
+   margin-bottom: 20px;
+}
+.first-line::first-line {
+   color: red;
+   font-style: italic;
+}
+.before-after::before {
+   content: "начало:";
+   color: green;
+   text-transform: uppercase;
+}
+.before-after::after {
+   content: ":конец";
+   color: red;
+   text-transform: uppercase;
+}
+.before-after-bg {
+   padding-left: 20px;
+}
+.before-after-bg::before {
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   margin-left: -20px;
+   background: url(../img/figma/like.svg) 0 0/15px no-repeat;
+}
+.before-after-bg::after {
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background: url(../img/figma/like.svg) 0 0/15px no-repeat;
+}
+.block-subtitle {
+   font-size: 28px;
+   text-align: center;
+   margin-bottom: 20px;
+   text-shadow: 2px 2px 2px #0D0603;
+}
+
+.count {
+   counter-reset: test;
+}
+.count p::before {
+   counter-increment: test;
+   content: "Абзац №" counter(test) ".";
+   color: red;
+}
+.red {
+   color: red;
+}
+.green {
+   color: green;
+}
+.black {
+   font-weight: 900;
+}
+ul > li:not(:last-child) {
+   margin-bottom: 5px;
+}
+.block  ul:not(:last-child) {
+   margin: 0 0 20px 0;
+}
+.first-last-child li:first-child {
+   color: red;
+}
+.first-last-child li:last-child {
+   color: green;
+}
+.nth-red li:nth-child(3) {
+   color: red;
+}
+.odd-even li:nth-child(even) {
+   color: red;
+}
+.odd-even li:nth-child(odd) {
+   color: green;
+}
+.therd li:nth-child(3n) {
+   color: red;
+}
+.second li:nth-child(2n) {
+   color: green;
+}
+.not-last :nth-last-child(2) {
+   color: red;
+}
+.sub-blocks  {
+   text-align: center;
+   margin-bottom: 30px;
+}
+.blue {
+   background: blue;
+   color: white;
+}
+.pink {
+   background: pink;
+   color: black;
+}
+.yellow {
+   background: yellow;
+   color: black;
+   
+}
+.sub-block-link {
+   padding: 5px 15px;
+   border-radius: 10px 10px 0 0;
+   border-left: 1px solid black;
+   border-top: 1px solid black;
+   border-right: 1px solid black;
+}
+.sub-block-link:hover {
+   box-shadow: 0px -10px 20px -4px #000000;
+}
+.sub-block-text {
+   border: 1px solid black;
+   border-radius: 0 0 10px 10px;
+}
+.block1,
+.block2,
+.block3{
+   display: none;
+
+}
+.block1:target,
+.block2:target,
+.block3:target {
+   display: block;
+}
+.green-btn {
+   text-align: center;
+   display: block;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 5px 15px;
+   background: green;
+   color: white;
+   border-radius: 10px;
+}
+.green-btn:hover {
+   background: #06A116;
+   box-shadow: 0px 5px 5px 0px #000000;
+}
+.green-btn:active{
+   background: chartreuse;
+}
+.button {
+   display: inline-block;
+   background: #F75E05;
+   color: white;
+   padding: 5px 15px;
+   border-radius: 10px;
+   text-transform: uppercase;
+}
+a.button:not(:last-child) {
+margin: 0 10px 0 0;
+}
+.button:hover {
+   background: #9e3c03;
+   color: black;
+   box-shadow: 0px 4px 19px 0px rgba(247,94,5,0.53);
+}
+.button:active {
+   background: black;
+   color: white;
+}
+.button:focus {
+   box-shadow: 0px 4px 19px 8px rgba(102,102,102,0.53);
+}
+.button:visited {
+   background: #666;
+   color: white;
+}
+/*=== Footer ===*/
+.footer-menu {
+   padding: 20px;
+}
+.footer-item:not(:last-child) {
+   margin-bottom: 10px;
+}
+.footer-link {
+   color: #666;
+}
+.footer-link:hover {
+   color: black;
+   text-decoration: underline;
+}
+
+
+/*=== Figma ===*/
+.figma {
+   background-color: white;
+   max-width: 420px;
+   margin: 0 auto;
+   font-family: "Lato",sans-serif;
+   font-size: 16px;
+   line-height: 160%;
+   color: #424551;
+}
+.header-figma,
+.footer-figma {
+   padding: 10px;
+   color: #F75E05;
+}
+.header-figma {
+   margin-bottom: 30px;
+}
+.block-figma-1 {
+   padding: 15px;
+   margin-bottom: 20px;
+}
+.block-figma-1 *:last-child {
+   margin-bottom: 0px;
+}
+.over-title-figma {
+   font-weight: 700;
+   line-height: 150%;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+}
+.title-figma {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   margin-bottom: 40px;
+}
+.list-figma {
+   margin-bottom: 22px;
+}
+.item-figma {
+  padding-left: 32px;
+}
+/*
+.list-figma li {
+   background: url(../img/figma/like.svg) 0 8px/ 16px no-repeat;
+}
+*/
+.list-figma li::before {
+   content:"";
+   display: inline-block;
+   min-width: 16px;
+   min-height: 26px;
+   margin: 0 16px 0 -32px;
+   background: url(../img/figma/like.svg) 0 10px/16px no-repeat;
+}
+.list-figma li:hover::before {
+   content: "";
+   display: inline-block;
+   min-width: 16px;
+   min-height: 26px;
+   margin: 0 16px 0 -32px;
+   background: url(../img/figma/like-hover.png) 0 10px/16px no-repeat;
+}
+.list-figma li:hover {
+   color: #F75E05;
+}
+.list-figma li:not(:last-child) {
+   margin: 0 0 12px 0;
+}
+.button-figma {
+   display: inline-block;
+   margin-bottom: 26px;
+   font-size: 14px;
+   color: #ffff;
+   line-height: 314%;
+   padding: 0 32px 0 32px;
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+   border-radius: 4px;
+   letter-spacing: 0.5px;
+}
+.button-figma:hover {
+   background: white;
+   border: 1px solid #F75E05;
+   color: #F75E05;
+   box-shadow: 0px 0px 7px 0px #F75E05;
+}
+.button-figma:active {
+   border: 1px solid #666;
+   box-shadow: 0px 0px 7px 0px #595959;
+   background: #666;
+}
+.block-figma-2 {
+   padding: 15px;
+}
+.title-figma-2 {
+   display: inline-block;
+   font-family: "Taviraj";
+   font-size: 36px;
+   line-height: 111%;
+   letter-spacing: 1px;
+   color: #333333;
+}
+.title-figma-2::after {
+   content: "";
+   display: block;
+   margin-top: 8px;
+   height: 1px;
+   width: 65px;
+   background: #333333;
+}

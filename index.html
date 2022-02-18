@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Урок 8</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="burger">
+            <a href="#open" class="menu">меню</a>
+            <div id="open" class="menu-burger">
+               <a href="#" class="close-button">(скрыть)</a>
+               <ul class="menu-list">
+                  <li class="list-item">
+                     <a target="_blank" href="https://marozik.github.io/Lesson_2/" class="list-link">
+                        Урок 2
+                        <img src="img/lesson/lesson2.png" alt="photo" class="list-img">
+                     </a>
+                  <li class="list-item">
+                     <a target="_blank" href="https://marozik.github.io/Lesson_3/" class="list-link">
+                        Урок 3
+                        <img src="img/lesson/lesson3.png" alt="photo" class="list-img">
+                     </a>
+                  <li class="list-item">
+                     <a target="_blank" href="https://marozik.github.io/Lesson_4/" class="list-link">
+                        Урок 4
+                        <img src="img/lesson/lesson4.png" alt="photo" class="list-img">
+                     </a>
+                  <li class="list-item">
+                     <a target="_blank" href="https://marozik.github.io/lesson_5/" class="list-link">
+                        Урок 5
+                        <img src="img/lesson/lesson5.png" alt="photo" class="list-img">
+                     </a>
+                  <li class="list-item">
+                     <a target="_blank" href="https://marozik.github.io/lesson_6/" class="list-link">
+                        Урок 6
+                        <img src="img/lesson/lesson6.png" alt="photo" class="list-img">
+                     </a>
+                  <li class="list-item">
+                     <a target="_blank" href="https://marozik.github.io/Lesson_7/" class="list-link">
+                        Урок 7
+                        <img src="img/lesson/lesson7.png" alt="photo" class="list-img">
+                     </a>
+                  <li class="list-item">
+                     <a target="_blank" href="figma.html" class="list-link">
+                        Figma
+                        <img src="img/lesson/figma.png" alt="photo" class="list-img">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="block">
+            <h1 class="main-title">
+               Задачи на работу с псевдоклассами и псевдоэлементами CSS
+            </h1>
+            <div class="conteiner">
+               <h2 class="block-title">
+                  Псевдоэлемент first-letter
+               </h2>
+               <p class="first-letter">
+                  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она,
+                  чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+               </p>
+               <p class="first-letter">
+                  Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не
+                  хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает
+                  свое высокое призвание и будет верен ему. Вот одно, во что я верю.
+               </p>
+               <p class="first-letter">
+                  Так же в Греции использовали деревянные дощечки, залитые воском. Такая книга состояла из ряда
+                  скреплённых друг с другом дощечек с углублением в середине, заполненном воском.
+                  Писали по воску стальной палочкой "стилем". До сих пор сохранилось это название – про писателя
+                  говорят, что у него хороший стиль (т.е. хорошо пишет).
+               </p>
+               <p class="first-letter">
+                  Я думаю, — сказал князь улыбаясь, — что ежели бы вас послали вместо нашего милого Винценгероде, вы бы
+                  взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?
+               </p>
+            </div>
+         </div>
+         <div class="block">
+            <div class="conteiner">
+               <h2 class="block-title">
+                  Псевдоэлемент first-line
+               </h2>
+               <p class="first-line">
+                  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она,
+                  чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+               </p>
+               <p class="first-line">
+                  Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не
+                  хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает
+                  свое высокое призвание и будет верен ему. Вот одно, во что я верю.
+               </p>
+               <p class="first-line">
+                  Так же в Греции использовали деревянные дощечки, залитые воском. Такая книга состояла из ряда
+                  скреплённых друг с другом дощечек с углублением в середине, заполненном воском.
+                  Писали по воску стальной палочкой "стилем". До сих пор сохранилось это название – про писателя
+                  говорят, что у него хороший стиль (т.е. хорошо пишет).
+               </p>
+               <p class="first-line">
+                  Я думаю, — сказал князь улыбаясь, — что ежели бы вас послали вместо нашего милого Винценгероде, вы бы
+                  взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?
+               </p>
+            </div>
+         </div>
+         <div class="block">
+            <div class="conteiner">
+               <h2 class="block-title">
+                  Псевдоэлемент before-after
+               </h2>
+               <p class="before-after">
+                  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она,
+                  чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+               </p>
+               <p class="before-after">
+                  Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не
+                  хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает
+                  свое высокое призвание и будет верен ему. Вот одно, во что я верю.
+               </p>
+               <p class="before-after">
+                  Так же в Греции использовали деревянные дощечки, залитые воском. Такая книга состояла из ряда
+                  скреплённых друг с другом дощечек с углублением в середине, заполненном воском.
+                  Писали по воску стальной палочкой "стилем". До сих пор сохранилось это название – про писателя
+                  говорят, что у него хороший стиль (т.е. хорошо пишет).
+               </p>
+               <p class="before-after">
+                  Я думаю, — сказал князь улыбаясь, — что ежели бы вас послали вместо нашего милого Винценгероде, вы бы
+                  взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?
+               </p>
+               <p class="before-after-bg">
+                  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она,
+                  чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+               </p>
+               <p class="before-after-bg">
+                  Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не
+                  хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает
+                  свое высокое призвание и будет верен ему. Вот одно, во что я верю.
+               </p>
+               <p class="before-after-bg">
+                  Так же в Греции использовали деревянные дощечки, залитые воском. Такая книга состояла из ряда
+                  скреплённых друг с другом дощечек с углублением в середине, заполненном воском.
+                  Писали по воску стальной палочкой "стилем". До сих пор сохранилось это название – про писателя
+                  говорят, что у него хороший стиль (т.е. хорошо пишет).
+               </p>
+               <p class="before-after-bg">
+                  Я думаю, — сказал князь улыбаясь, — что ежели бы вас послали вместо нашего милого Винценгероде, вы бы
+                  взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?
+               </p>
+            </div>
+         </div>
+         <div class="block">
+            <div class="conteiner count">
+               <h2 class="block-title">
+                  Псевдоэлемент counter-increment. Автоматическая нумерация абзацов
+               </h2>
+               <p class="counter-increment">
+                  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она,
+                  чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+               </p>
+               <p class="counter-increment">
+                  Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не
+                  хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает
+                  свое высокое призвание и будет верен ему. Вот одно, во что я верю.
+               </p>
+               <p class="counter-increment">
+                  Так же в Греции использовали деревянные дощечки, залитые воском. Такая книга состояла из ряда
+                  скреплённых друг с другом дощечек с углублением в середине, заполненном воском.
+                  Писали по воску стальной палочкой "стилем". До сих пор сохранилось это название – про писателя
+                  говорят, что у него хороший стиль (т.е. хорошо пишет).
+               </p>
+               <p class="counter-increment">
+                  Я думаю, — сказал князь улыбаясь, — что ежели бы вас послали вместо нашего милого Винценгероде, вы бы
+                  взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?
+               </p>
+               <p class="2">
+                  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она,
+                  чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+               </p>
+               <p class="2">
+                  Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не
+                  хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает
+                  свое высокое призвание и будет верен ему. Вот одно, во что я верю.
+               </p>
+               <p class="2">
+                  Так же в Греции использовали деревянные дощечки, залитые воском. Такая книга состояла из ряда
+                  скреплённых друг с другом дощечек с углублением в середине, заполненном воском.
+                  Писали по воску стальной палочкой "стилем". До сих пор сохранилось это название – про писателя
+                  говорят, что у него хороший стиль (т.е. хорошо пишет).
+               </p>
+               <p class="2">
+                  Я думаю, — сказал князь улыбаясь, — что ежели бы вас послали вместо нашего милого Винценгероде, вы бы
+                  взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?
+               </p>
+            </div>
+         </div>
+         <div class="block">
+            <div class="conteiner">
+               <h2 class="block-title">
+                  Псевдоклассы: <span class="black">:first-child, :last-child, :nth-child, :not</span>
+               </h2>
+               <h2 class="block-subtitle">
+                  Первый li <span class="red">красный</span>, последний li <span class="green">зеленый</span>
+               </h2>
+               <ul class="first-last-child">
+                  <li class="item">1 пункт</li>
+                  <li class="item">2 пункт</li>
+                  <li class="item">3 пункт</li>
+                  <li class="item">4 пункт</li>
+                  <li class="item">5 пункт</li>
+                  <li class="item">6 пункт</li>
+                  <li class="item">7 пункт</li>
+                  <li class="item">8 пункт</li>
+                  <li class="item">9 пункт</li>
+                  <li class="item">10 пункт</li>
+               </ul>
+               <h2 class="block-subtitle">
+                  Третий li покрашен в <span class="red
+                  ">красный</span> цвет
+               </h2>
+               <ul class="nth-red">
+                  <li class="item">1 пункт</li>
+                  <li class="item">2 пункт</li>
+                  <li class="item">3 пункт</li>
+                  <li class="item">4 пункт</li>
+                  <li class="item">5 пункт</li>
+                  <li class="item">6 пункт</li>
+                  <li class="item">7 пункт</li>
+                  <li class="item">8 пункт</li>
+                  <li class="item">9 пункт</li>
+                  <li class="item">10 пункт</li>
+               </ul>
+               <h2 class="block-subtitle">
+                  Четный li покрашен в <span class="red
+                  ">красный</span> цвет, а нечетный - в <span class="green">зеленый</span>
+               </h2>
+               <ul class="odd-even">
+                  <li class="item">1 пункт</li>
+                  <li class="item">2 пункт</li>
+                  <li class="item">3 пункт</li>
+                  <li class="item">4 пункт</li>
+                  <li class="item">5 пункт</li>
+                  <li class="item">6 пункт</li>
+                  <li class="item">7 пункт</li>
+                  <li class="item">8 пункт</li>
+                  <li class="item">9 пункт</li>
+                  <li class="item">10 пункт</li>
+               </ul>
+               <h2 class="block-subtitle">
+                  Каждый 3-й li (начиная с третьего) покрашен в <span class="red">красный цвет</span>, а каждый второй
+                  li в - <span class="green">зеленый</span> цвет
+               </h2>
+               <ul class="therd second">
+                  <li class="item">1 пункт</li>
+                  <li class="item">2 пункт</li>
+                  <li class="item">3 пункт</li>
+                  <li class="item">4 пункт</li>
+                  <li class="item">5 пункт</li>
+                  <li class="item">6 пункт</li>
+                  <li class="item">7 пункт</li>
+                  <li class="item">8 пункт</li>
+                  <li class="item">9 пункт</li>
+                  <li class="item">10 пункт</li>
+               </ul>
+               <h2 class="block-subtitle">
+                  Предпоследний li всегда будет <span class="red">красного</span> цвета, независимо от их количества
+               </h2>
+               <ul class="not-last">
+                  <li class="item">1 пункт</li>
+                  <li class="item">2 пункт</li>
+                  <li class="item">3 пункт</li>
+                  <li class="item">4 пункт</li>
+                  <li class="item">5 пункт</li>
+                  <li class="item">6 пункт</li>
+                  <li class="item">7 пункт</li>
+               </ul>
+            </div>
+         </div>
+         <div class="block">
+            <div class="conteiner">
+               <h2 class="block-title">
+                  Псевдоклассы: :hover, :active, :focus, :visited
+               </h2>
+               <a target="_blank" href="https://marozik.github.io/Lesson_4/" class="button">урок 4</a>
+               <a target="_blank" href="https://marozik.github.io/lesson_5/" class="button">урок 5</a>
+               <a target="_blank" href="https://marozik.github.io/lesson_6/" class="button">урок 6</a>
+               <a target="_blank" href="https://marozik.github.io/Lesson_7/" class="button">урок7</a>
+            </div>
+         </div>
+         <div id="target" class="block">
+            <div class="conteiner">
+               <h2 class="block-title">Псевдоэлемент <span class="red">:target</span></h2>
+               <div class="sub-blocks">
+                  <a href="#open-block1" class="sub-block-link blue">Открыть блок 1</a>
+                  <a href="#open-block2" class="sub-block-link pink">Открыть блок 2</a>
+                  <a href="#open-block3" class="sub-block-link yellow">Открыть блок 3</a>
+                  <div id="open-block1" class="block1">
+                     <p class="sub-block-text blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                        quibusdam at
+                        similique asperiores suscipit maxime quasi dicta repellendus qui, quos beatae fuga nihil,
+                        veritatis
+                        vel doloribus? Laborum maiores repellendus exercitationem.</p>
+                  </div>
+                  <div id="open-block2" class="block2">
+                     <p class="sub-block-text pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                        quibusdam at
+                        similique asperiores suscipit maxime quasi dicta repellendus qui, quos beatae fuga nihil,
+                        veritatis
+                        vel doloribus? Laborum maiores repellendus exercitationem.</p>
+                  </div>
+                  <div id="open-block3" class="block3">
+                     <p class="sub-block-text yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                        quibusdam at
+                        similique asperiores suscipit maxime quasi dicta repellendus qui, quos beatae fuga nihil,
+                        veritatis
+                        vel doloribus? Laborum maiores repellendus exercitationem.</p>
+                  </div>
+               </div>
+               <a href="#target" class="green-btn">Закрыть</a>
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <nav class="footer-menu">
+            <ul class="footer-list">
+               <li class="footer-item">
+                  <a href="#" class="footer-link">Пункт 1</a>
+               </li>
+               <li class="footer-item">
+                  <a href="#" class="footer-link">Пункт 2</a>
+               </li>
+               <li class="footer-item">
+                  <a href="#" class="footer-link">Пункт 3</a>
+               </li>
+               <li class="footer-item">
+                  <a href="#" class="footer-link">Пункт 4</a>
+               </li>
+            </ul>
+         </nav>
+      </footer>
+   </div>
+</body>
+
+</html>
